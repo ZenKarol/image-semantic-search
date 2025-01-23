@@ -168,14 +168,14 @@ class ImageSearchWindow:
         self.frame_buttons = ttk.Frame(self.main_frame, padding=5)
         self.frame_buttons.pack(fill=tk.X, padx=5, pady=5, expand=False)
 
-        self.btn_update_index = ttk.Button(self.frame_buttons, text="Actualizar Índice", command=self.update_index)
-        self.btn_update_index.pack(side=tk.LEFT, padx=(100, 10), pady=5) # Espacio a la izquierda y derecha
+        self.btn_update_index = ttk.Button(self.frame_buttons, text="Actualizar Índice",width=20, command=self.update_index)
+        self.btn_update_index.pack(side=tk.LEFT, padx=(165, 20), pady=5)
 
-        self.btn_search = ttk.Button(self.frame_buttons, text="Buscar", command=self.search, style="Blue.TButton")
-        self.btn_search.pack(side=tk.LEFT, padx=(10, 100), pady=5)
+        self.btn_search = ttk.Button(self.frame_buttons, text="Buscar",width=20, command=self.search, style="Blue.TButton")
+        self.btn_search.pack(side=tk.LEFT, padx=(20, 105), pady=5)
         self.btn_search.bind('<Return>', lambda event: self.search())
         self.root.bind('<Return>', lambda event: self.search())
-        self.about_button = ttk.Button(self.frame_buttons, text="?", width=3, command=self.show_about)
+        self.about_button = ttk.Button(self.frame_buttons, text="Acerca de", width=12, command=self.show_about)
         self.about_button.pack(side=tk.RIGHT, padx=5, pady=5)
 
         instructions_text = "Instrucciones de Uso:\n\n" \

@@ -1,0 +1,6 @@
+clip==1.0
+faiss_cpu==1.9.0.post1
+numpy==2.2.2
+opencv_python_headless==4.11.0.86
+Pillow==11.1.0
+torch==2.5.1
